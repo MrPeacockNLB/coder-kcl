@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=file://workspace/schema.json
+# see https://github.com/nordlb-cloud/devops-k8s-modules/tree/main/schemas#ide-integration for installation
+---
+
+coder:
+  workspace:
+    git:
+      pre_commit:
+        enable: true
+    size: 1Gi
+    docker:
+      enable: true
+  vscode:
+    enable: true
+
+    #
+    # VSCode Extensions be to installed
+    #
+    extensions:
+      - id: redhat.vscode-yaml          # Schema Validation in VSCode
+
