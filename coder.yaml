@@ -7,6 +7,11 @@ coder:
     git:
       pre_commit:
         enable: true
+      additional_repos:
+        - git_orga: kcl-lang
+          git_repo: examples
+          git_ref: main
+          path: /workspace/examples
     size: 1Gi
     docker:
       enable: true
