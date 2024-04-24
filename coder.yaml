@@ -15,6 +15,9 @@ coder:
     size: 1Gi
     docker:
       enable: true
+  jobs:
+    - name: install KCL
+      cmd: install.sh
   vscode:
     enable: true
 
