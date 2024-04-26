@@ -21,7 +21,7 @@ coder:
       enable: true
   jobs:
     - name: install KCL
-      cmd: install.sh
+      cmd: $CODER_WORKDIR/install.sh
   vscode:
     enable: true
 
