@@ -1,0 +1,12 @@
+#
+# This is a minimal pre-commit configuration file
+#
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.6.0
+  hooks:
+  - id: trailing-whitespace
+  - id: end-of-file-fixer
+  - id: check-added-large-files
+  - id: check-merge-conflict
+  - id: no-commit-to-branch
