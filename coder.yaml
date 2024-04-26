@@ -12,6 +12,10 @@ coder:
           git_repo: examples
           git_ref: main
           path: /workspace/examples
+        - git_orga: kcl-lang
+          git_repo: modules
+          git_ref: main
+          path: /workspace/modules
     size: 1Gi
     docker:
       enable: true
