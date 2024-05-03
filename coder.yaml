@@ -22,6 +22,11 @@ coder:
   jobs:
     - name: install KCL
       cmd: $CODER_WORKDIR/install.sh
+    - name: link folder into workspace
+      cmd: |
+        ln -s /workspace/examples /workspace/workdir/examples && \
+        ln -s /workspace/modules  /workspace/workdir/modules
+
   vscode:
     enable: true
 
